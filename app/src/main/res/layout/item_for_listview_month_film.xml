@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/textview_name_film"
+        android:paddingStart="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/textview_rating_film"
+        android:paddingStart="4dp"
+        android:paddingTop="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/green"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

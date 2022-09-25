@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "907858836367",
+    "project_id": "kino-f3360",
+    "storage_bucket": "kino-f3360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907858836367:android:574c99726e0186e86ca9fa",
+        "android_client_info": {
+          "package_name": "com.example.kinobook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907858836367-mi7nlisivell7vi2btlkjbt84qdn8o0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBchNNZcLA-yJwYasrmj0_yKZPJKPnSYQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907858836367-mi7nlisivell7vi2btlkjbt84qdn8o0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
