@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".kinobook.MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +14,7 @@
         android:theme="@style/Theme.KinoBook"
         tools:targetApi="31">
         <activity
-            android:name=".Podgruzfilm"
+            android:name=".kinobook.Podgruzfilm"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

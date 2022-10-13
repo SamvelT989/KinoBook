@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".kinobook.MainActivity"
     tools:ignore="MissingClass"
-    android:background="@drawable/tg">
+    android:background="@drawable/tg"
+    >
     <TextView
         android:id="@+id/banner"
         android:layout_width="match_parent"

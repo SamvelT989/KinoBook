@@ -4,5 +4,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textview_name_more"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageview_poster_more"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textview_slogan_more"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textview_description_more"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textview_rating_kp_more"
+        android:textSize="12sp"
+        android:textColor="@color/green"
+        android:textStyle="normal"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

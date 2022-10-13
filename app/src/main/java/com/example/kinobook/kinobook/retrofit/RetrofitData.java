@@ -45,7 +45,7 @@ public class RetrofitData {
             subscription.unsubscribe();
         }
 
-        observable = requestAPI.getDataCinema("VATR22P-9CPMH1Q-MN5B7YZ-4G0YBB9", "241", "id");
+        observable = requestAPI.getDataCinema("VATR22P-9CPMH1Q-MN5B7YZ-4G0YBB9", id, "id");
 
         previousIdStr = id;
 
@@ -68,7 +68,7 @@ public class RetrofitData {
     }
 
     public static Observable<ModelDataCinema> getDataCinema(String id){
-        if (!previousIdStr.equals(id) ||obserableModelDataCinema == null){
+        if (!previousIdStr.equals(id) || obserableModelDataCinema == null){
             resetObservable(id);
         }
         return obserableModelDataCinema;

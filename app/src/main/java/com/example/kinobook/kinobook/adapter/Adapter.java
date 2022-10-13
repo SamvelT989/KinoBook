@@ -2,6 +2,7 @@ package com.example.kinobook.kinobook.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,22 +13,27 @@ import com.example.kinobook.R;
 import com.example.kinobook.kinobook.model.Docs;
 import com.example.kinobook.kinobook.model.ModelDataCinema;
 
+import java.util.List;
+
 public class Adapter extends BaseAdapter {
 
-    private  Docs modelDataCinema;
+    private  List<ModelDataCinema> docs;
 
-    public Adapter(Docs modelDataCinema){
-        this.modelDataCinema = modelDataCinema;
+    public Adapter(List<ModelDataCinema> modelDataCinema){
+
+        this.docs = modelDataCinema;
+
     }
 
     @Override
     public int getCount() {
-        return modelDataCinema.getDocs().size();
+        return docs.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return modelDataCinema.getDocs().get(i);
+        return docs.get(i);
+
     }
 
     @Override
@@ -39,6 +45,11 @@ public class Adapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         Context context = viewGroup.getContext();
+        if(docs.get(i) != null){
+            Log.d("-----------------------" ,String.valueOf( docs.get(i).getType()));
+            Log.d("-----------------------" ,String.valueOf( docs.get(i).getName()));
+        }
+
 
         if (view == null){
             LayoutInflater inflater = (LayoutInflater)
@@ -49,8 +60,8 @@ public class Adapter extends BaseAdapter {
         TextView textViewName = view.findViewById(R.id.textview_name_film);
         TextView textViewRating = view.findViewById(R.id.textview_rating_film);
 
-        textViewName.setText(modelDataCinema.getDocs().get(i).getName());
-        textViewRating.setText(String.format("%.1f",modelDataCinema.getDocs().get(i).getRating().getKp()));
+        textViewName.setText(docs.get(i).getName());
+        textViewRating.setText(String.format("%.1f",docs.get(i).getRating().getKp()));
 
         return view;
     }
